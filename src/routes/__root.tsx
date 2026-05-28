@@ -72,20 +72,43 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Sunshine Marketing & Promoters — Premium DTCP Plots Near Bangalore" },
+      {
+        name: "description",
+        content:
+          "Buy DTCP approved A-Katha plots at ASV 135 GOLD near Narsapur Industrial Area. ₹2999/Sqft, bank loans up to 70%, high ROI investment near Bangalore.",
+      },
+      { name: "author", content: "Sunshine Marketing & Promoters" },
+      {
+        name: "keywords",
+        content:
+          "DTCP plots near Bangalore, ASV 135 GOLD, Narsapur plots, A-Katha plots, plotted developments Karnataka, real estate investment Bangalore",
+      },
+      { property: "og:title", content: "Sunshine Marketing & Promoters — ASV 135 GOLD Premium Plots" },
+      {
+        property: "og:description",
+        content:
+          "Premium DTCP approved plotted developments near Bangalore's fastest-growing industrial corridor.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Sunshine Marketing & Promoters" },
+      {
+        name: "twitter:description",
+        content: "Premium DTCP plots near Bangalore — invest in tomorrow's landmark destinations.",
+      },
+      { name: "theme-color", content: "#6EA300" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap",
       },
+      { rel: "canonical", href: "/" },
     ],
   }),
   shellComponent: RootShell,
