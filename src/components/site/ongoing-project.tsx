@@ -13,22 +13,25 @@ export function OnGoingProject() {
   return (
     <section id="ongoing-project" className="bg-white py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
-        <div className="relative grid lg:grid-cols-12 items-center gap-6 lg:gap-0">
+        <div className="relative grid md:grid-cols-12 items-center gap-0">
           {/* Image */}
-          <Reveal className="lg:col-span-8">
+          <Reveal className="md:col-span-7 lg:col-span-8">
             <div className="relative overflow-hidden shadow-sm">
               <img
                 src={asvGate}
                 alt="ASV 135 GOLD project gate"
-                className="h-[360px] md:h-[520px] w-full object-cover"
+                className="h-[280px] sm:h-[360px] md:h-[480px] lg:h-[560px] w-full object-cover"
                 loading="lazy"
               />
             </div>
           </Reveal>
 
           {/* Floating card */}
-          <Reveal delay={0.15} className="lg:col-span-5 lg:-ml-24 z-10 -mt-10 lg:mt-0 px-4 lg:px-0">
-            <div className="bg-white shadow-2xl border border-border/40 p-8 md:p-12">
+          <Reveal
+            delay={0.15}
+            className="md:col-span-6 lg:col-span-5 z-10 -mt-16 md:mt-0 md:-ml-16 lg:-ml-24 px-4 md:px-0"
+          >
+            <div className="bg-white shadow-2xl border border-border/40 p-6 sm:p-8 md:p-10 lg:p-12">
               <p className="text-2xl md:text-3xl font-serif font-semibold text-foreground">
                 On Going Project
               </p>
