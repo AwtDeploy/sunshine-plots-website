@@ -25,7 +25,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/75" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/30 to-transparent" />
 
-      <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl items-center px-4 md:px-6 pt-28 pb-44 md:pb-52">
+      <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl items-center px-4 md:px-6 pt-32 lg:pt-40 pb-44 md:pb-52">
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur border border-white/25 px-4 py-1.5 text-xs tracking-[0.18em] uppercase text-white/90">
             <span className="h-1.5 w-1.5 rounded-full bg-brand-orange" />
