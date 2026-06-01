@@ -40,9 +40,9 @@ export function SiteNav() {
     >
       {/* Top utility bar (desktop only) */}
       <div
-        className={`hidden lg:block border-b transition-colors ${
-          scrolled || open ? "border-border/60" : "border-white/15"
-        }`}
+        className={`hidden lg:block border-b transition-all duration-300 overflow-hidden ${
+          scrolled ? "max-h-0 opacity-0" : "max-h-10 opacity-100 border-white/15"
+        } ${open ? "border-border/60" : ""}`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 h-9 text-[11px] tracking-[0.18em] uppercase">
           <span className={scrolled || open ? "text-muted-foreground" : "text-white/80"}>
