@@ -45,11 +45,12 @@ const roi = [
 export function InvestmentAdvantage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative pt-36 md:pt-44 pb-20 md:pb-28 overflow-hidden">
+      {/* Hero — full-bleed like home */}
+      <section className="relative w-full overflow-hidden min-h-[100svh] flex items-center">
         <img src={hero} alt="Aerial plotted development" className="absolute inset-0 h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/80" />
-        <div className="relative mx-auto max-w-7xl px-4 md:px-6 text-center">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/75" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/30 to-transparent" />
+        <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-6 pt-32 lg:pt-40 pb-24 md:pb-32 text-center w-full">
           <span className="text-xs tracking-[0.22em] uppercase text-brand-orange font-medium">
             Investment Advantage
           </span>
