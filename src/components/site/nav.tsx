@@ -97,7 +97,7 @@ export function SiteNav() {
         <div className="flex items-center gap-2 md:gap-3 shrink-0">
           <Button
             asChild
-            className="hidden sm:inline-flex bg-brand-orange hover:bg-brand-orange/90 text-white rounded-full px-5 md:px-6 h-11 text-[12px] font-semibold uppercase tracking-[0.14em] whitespace-nowrap shadow-md shadow-orange-900/20"
+            className={`hidden sm:inline-flex bg-brand-orange hover:bg-brand-orange/90 text-white rounded-full px-5 md:px-6 text-[12px] font-semibold uppercase tracking-[0.14em] whitespace-nowrap shadow-md shadow-orange-900/20 transition-all duration-300 ${scrolled ? "h-9" : "h-11"}`}
           >
             <Link to="/contact">Book Site Visit</Link>
           </Button>
