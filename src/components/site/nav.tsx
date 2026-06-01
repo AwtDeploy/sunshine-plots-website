@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X, Phone, ChevronRight } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
@@ -16,6 +16,12 @@ const links = [
 export function SiteNav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const isHome = pathname === "/";
+  // On non-home pages the page background is white, so the nav must always
+  // use the solid/light style. Only the home hero is dark enough for the
+  // transparent overlay variant.
+  const solid = scrolled || open || !isHome;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -33,7 +39,7 @@ export function SiteNav() {
     <>
     <header
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        scrolled || open
+        solid
           ? "bg-white/90 backdrop-blur-md border-b border-border/60 shadow-sm"
           : "bg-gradient-to-b from-black/30 to-transparent"
       }`}
@@ -41,17 +47,21 @@ export function SiteNav() {
       {/* Top utility bar (desktop only) */}
       <div
         className={`hidden lg:block border-b transition-all duration-300 overflow-hidden ${
-          scrolled ? "max-h-0 opacity-0" : "max-h-10 opacity-100 border-white/15"
-        } ${open ? "border-border/60" : ""}`}
+          scrolled
+            ? "max-h-7 opacity-100 border-border/40"
+            : solid
+              ? "max-h-10 opacity-100 border-border/60"
+              : "max-h-10 opacity-100 border-white/15"
+        }`}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 h-9 text-[11px] tracking-[0.18em] uppercase">
-          <span className={scrolled || open ? "text-muted-foreground" : "text-white/80"}>
+        <div className={`mx-auto flex max-w-7xl items-center justify-between px-6 tracking-[0.18em] uppercase transition-all duration-300 ${scrolled ? "h-6 text-[10px]" : "h-9 text-[11px]"}`}>
+          <span className={solid ? "text-muted-foreground" : "text-white/80"}>
             DTCP &amp; A-Katha Approved · Narsapur Industrial Corridor
           </span>
           <a
             href="tel:+919876543210"
             className={`flex items-center gap-2 font-semibold hover:text-brand-orange ${
-              scrolled || open ? "text-foreground/80" : "text-white/90"
+              solid ? "text-foreground/80" : "text-white/90"
             }`}
           >
             <Phone className="h-3.5 w-3.5" /> +91 98765 43210
@@ -64,13 +74,13 @@ export function SiteNav() {
           <img src={logo} alt="Sunshine Marketing & Promoters" className={`w-auto transition-all duration-300 ${scrolled ? "h-10" : "h-14"}`} />
           <div className="hidden xl:flex flex-col leading-tight">
             <span
-              className={`font-serif transition-all duration-300 ${scrolled ? "text-base" : "text-xl"} ${scrolled || open ? "text-foreground" : "text-white"}`}
+              className={`font-serif transition-all duration-300 ${scrolled ? "text-base" : "text-xl"} ${solid ? "text-foreground" : "text-white"}`}
             >
               Sunshine
             </span>
             <span
               className={`tracking-[0.2em] uppercase transition-all duration-300 ${scrolled ? "text-[9px]" : "text-[10px]"} ${
-                scrolled || open ? "text-muted-foreground" : "text-white/70"
+                solid ? "text-muted-foreground" : "text-white/70"
               }`}
             >
               Marketing &amp; Promoters
@@ -84,7 +94,7 @@ export function SiteNav() {
               key={l.to}
               to={l.to}
               className={`whitespace-nowrap text-[13px] font-semibold tracking-[0.12em] uppercase transition-colors hover:text-brand-orange ${
-                scrolled || open ? "text-foreground/85" : "text-white/90"
+                solid ? "text-foreground/85" : "text-white/90"
               }`}
               activeProps={{ className: "text-brand-orange" }}
               activeOptions={{ exact: l.to === "/" }}
@@ -103,7 +113,7 @@ export function SiteNav() {
           </Button>
           <button
             className={`lg:hidden p-2 rounded-md ${
-              scrolled || open ? "text-foreground" : "text-white"
+              solid ? "text-foreground" : "text-white"
             }`}
             onClick={() => setOpen((v) => !v)}
             aria-label="Toggle menu"
