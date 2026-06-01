@@ -64,12 +64,12 @@ export function SiteNav() {
           <img src={logo} alt="Sunshine Marketing & Promoters" className={`w-auto transition-all duration-300 ${scrolled ? "h-10" : "h-14"}`} />
           <div className="hidden xl:flex flex-col leading-tight">
             <span
-              className={`font-serif text-xl ${scrolled || open ? "text-foreground" : "text-white"}`}
+              className={`font-serif transition-all duration-300 ${scrolled ? "text-base" : "text-xl"} ${scrolled || open ? "text-foreground" : "text-white"}`}
             >
               Sunshine
             </span>
             <span
-              className={`text-[10px] tracking-[0.2em] uppercase ${
+              className={`tracking-[0.2em] uppercase transition-all duration-300 ${scrolled ? "text-[9px]" : "text-[10px]"} ${
                 scrolled || open ? "text-muted-foreground" : "text-white/70"
               }`}
             >
