@@ -1,0 +1,9 @@
+# Copy to .dev.vars for Wrangler local/preview (same keys as .env)
+MONGODB_URI=
+MONGODB_DB_NAME=sunshine_plots
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=
+SMTP_PASS=
+SMTP_FROM=
+LEADS_NOTIFY_TO=

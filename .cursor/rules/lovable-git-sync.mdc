@@ -1,0 +1,41 @@
+---
+description: Lovable ↔ GitHub ↔ Cursor sync workflow for sunshine-plots
+alwaysApply: true
+---
+
+# Lovable + GitHub + Cursor workflow
+
+## Architecture
+- GitHub is the hub: https://github.com/gayathriparsam/sunshine-plots
+- Lovable and Cursor never sync directly; both use branch `main`.
+- Pushes to other branches do not update Lovable until merged into `main` or the active branch is switched in Lovable.
+
+## Before making code changes
+1. Work in this clone: `C:\Users\DELL\Documents\sunshine-plots` (not the Downloads zip export).
+2. Run `git pull origin main` to incorporate Lovable/GitHub commits.
+3. Confirm active branch is `main`.
+
+## After making code changes
+1. Run `npm run dev` or `npm run build` locally to verify.
+2. Commit with clear messages: `fix:`, `feat:`, `refactor:`.
+3. Push to main only: `git push origin main`.
+4. Confirm the commit appears on GitHub before assuming Lovable updated.
+
+## Lovable-specific constraints
+- Do not manually add Vite plugins already included by `@lovable.dev/vite-tanstack-config` in `vite.config.ts`.
+- Extend config only via `defineConfig({ vite: { ... } })` or documented `tanstackStart` options.
+- Prefer editing `src/**` unless the task requires tooling changes.
+
+## Safety rules
+- Never rename, move, or delete the connected GitHub repository.
+- Resolve merge conflicts, then push to `main`; do not leave conflict markers.
+- Do not commit secrets (`.env`, API keys).
+
+## Debugging attribution
+- Commits by `lovable-dev[bot]` or `gpt-engineer-app[bot]` → originated in Lovable.
+- Commits by `gayathriparsam` → originated in Cursor/local Git.
+- If Lovable and local differ, compare env vars, branch name, and latest commit on GitHub.
+
+## Agent behavior
+- Minimize diffs; match existing patterns.
+- After substantive edits, remind the user to `git push origin main` so Lovable stays in sync.
