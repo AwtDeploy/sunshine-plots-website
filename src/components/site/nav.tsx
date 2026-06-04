@@ -59,12 +59,12 @@ export function SiteNav() {
             DTCP &amp; A-Katha Approved · Narsapur Industrial Corridor
           </span>
           <a
-            href="tel:+919876543210"
+            href="tel:+919620126666"
             className={`flex items-center gap-2 font-semibold hover:text-brand-orange ${
               solid ? "text-foreground/80" : "text-white/90"
             }`}
           >
-            <Phone className="h-3.5 w-3.5" /> +91 98765 43210
+            <Phone className="h-3.5 w-3.5" /> +91 96201 26666
           </a>
         </div>
       </div>
@@ -164,7 +164,7 @@ export function SiteNav() {
               variant="outline"
               className="rounded-full h-12 border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"
             >
-              <a href="tel:+919876543210">
+              <a href="tel:+919620126666">
                 <Phone className="mr-2 h-4 w-4" /> Call Us
               </a>
             </Button>

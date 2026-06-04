@@ -48,8 +48,8 @@ export function SiteFooter() {
         <div className="md:col-span-3">
           <h4 className="font-serif text-white text-lg mb-4">Contact</h4>
           <ul className="space-y-3 text-sm">
-            <li className="flex items-start gap-2"><Phone className="h-4 w-4 mt-0.5 text-brand-orange" /><a href="tel:+919876543210" className="hover:text-white">+91 98765 43210</a></li>
-            <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 text-brand-orange" /><a href="mailto:sales@sunshinepromoters.in" className="hover:text-white">sales@sunshinepromoters.in</a></li>
+            <li className="flex items-start gap-2"><Phone className="h-4 w-4 mt-0.5 text-brand-orange" /><a href="tel:+919620126666" className="hover:text-white">+91 96201 26666</a></li>
+            <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 text-brand-orange" /><a href="mailto:admin@sunshinebangalore.com" className="hover:text-white">admin@sunshinebangalore.com</a></li>
             <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 text-brand-orange" />Bengaluru, Karnataka, India</li>
           </ul>
         </div>

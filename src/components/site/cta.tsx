@@ -44,7 +44,7 @@ export function CTA() {
                 variant="outline"
                 className="rounded-full h-12 px-7 border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white backdrop-blur"
               >
-                <a href="tel:+919876543210">
+                <a href="tel:+919620126666">
                   <Phone className="mr-2 h-4 w-4" /> Talk to an Expert
                 </a>
               </Button>
