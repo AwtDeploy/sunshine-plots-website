@@ -72,12 +72,12 @@ export function ContactSection() {
 
           <div className="mt-10 space-y-5">
             {[
-              { icon: Phone, label: "Call us", value: "+91 98765 43210", href: "tel:+919876543210" },
+              { icon: Phone, label: "Call us", value: "+91 96201 26666", href: "tel:+919620126666" },
               {
                 icon: Mail,
                 label: "Email",
-                value: "sales@sunshinepromoters.in",
-                href: "mailto:sales@sunshinepromoters.in",
+                value: "admin@sunshinebangalore.com",
+                href: "mailto:admin@sunshinebangalore.com",
               },
               { icon: MapPin, label: "Office", value: "Bengaluru, Karnataka, India" },
               { icon: Clock, label: "Business Hours", value: "Mon – Sat · 9:30 AM – 7:00 PM" },

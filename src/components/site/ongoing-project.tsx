@@ -59,7 +59,7 @@ export function OnGoingProject() {
               </ul>
 
               <a
-                href="https://wa.me/919876543210?text=Hi%2C%20I%27m%20interested%20in%20ASV%20135%20GOLD"
+                href="https://wa.me/919620126666?text=Hi%2C%20I%27m%20interested%20in%20ASV%20135%20GOLD"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 inline-flex items-center justify-center gap-2 w-full md:w-auto bg-[#22b14c] hover:bg-[#1c9a41] text-white px-10 py-4 rounded-md font-semibold text-base transition-colors shadow-md"

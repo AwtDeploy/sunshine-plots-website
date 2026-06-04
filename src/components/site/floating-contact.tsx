@@ -12,7 +12,7 @@ export function FloatingContact() {
   return (
     <div className="fixed bottom-5 right-5 z-40 flex flex-col gap-3">
       <a
-        href="https://wa.me/919876543210"
+        href="https://wa.me/919620126666"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
@@ -21,7 +21,7 @@ export function FloatingContact() {
         <WhatsAppIcon className="h-7 w-7" />
       </a>
       <a
-        href="tel:+919876543210"
+        href="tel:+919620126666"
         aria-label="Call us"
         className="flex h-14 w-14 items-center justify-center rounded-full bg-brand-orange text-white shadow-xl shadow-orange-900/30 hover:scale-105 transition-transform"
       >
