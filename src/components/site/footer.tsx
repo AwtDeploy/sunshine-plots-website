@@ -30,7 +30,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="md:col-span-2">
-          <h4 className="font-serif text-white text-lg mb-4">Explore</h4>
+          <h4 className="font-serif text-white text-2xl font-bold mb-5 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-10 after:bg-brand-orange after:rounded-full">Explore</h4>
           <ul className="space-y-2 text-sm">
             {[{to:"/",l:"Home"},{to:"/about",l:"About"},{to:"/projects",l:"Projects"},{to:"/gallery",l:"Gallery"},{to:"/contact",l:"Contact"}].map((x)=>(
               <li key={x.to}><Link to={x.to} className="hover:text-brand-orange transition-colors">{x.l}</Link></li>
@@ -38,7 +38,7 @@ export function SiteFooter() {
           </ul>
         </div>
         <div className="md:col-span-3">
-          <h4 className="font-serif text-white text-lg mb-4">Projects</h4>
+          <h4 className="font-serif text-white text-2xl font-bold mb-5 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-10 after:bg-brand-orange after:rounded-full">Projects</h4>
           <ul className="space-y-2 text-sm">
             <li>ASV 135 GOLD</li>
             <li>Sunshine Greens Phase II</li>
@@ -46,7 +46,7 @@ export function SiteFooter() {
           </ul>
         </div>
         <div className="md:col-span-3">
-          <h4 className="font-serif text-white text-lg mb-4">Contact</h4>
+          <h4 className="font-serif text-white text-2xl font-bold mb-5 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-10 after:bg-brand-orange after:rounded-full">Contact</h4>
           <ul className="space-y-3 text-sm">
             <li className="flex items-start gap-2"><Phone className="h-4 w-4 mt-0.5 text-brand-orange" /><a href="tel:+919620126666" className="hover:text-white">+91 96201 26666</a></li>
             <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 text-brand-orange" /><a href="mailto:admin@sunshinebangalore.com" className="hover:text-white">admin@sunshinebangalore.com</a></li>

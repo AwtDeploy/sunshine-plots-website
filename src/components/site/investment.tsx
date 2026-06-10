@@ -3,7 +3,7 @@ import { Coins, Building2, Banknote, ShieldCheck } from "lucide-react";
 
 const benefits = [
   { icon: Coins, t: "Below-Market Entry", d: "₹2,999/sqft pricing in a high-growth corridor near Bangalore." },
-  { icon: Building2, t: "Industrial Demand", d: "Honda, Mahindra, TATA, Scania & more — driving sustained land demand." },
+  { icon: Building2, t: "Industrial Demand", d: "Honda, Mahindra, TATA, Scania & more - driving sustained land demand." },
   { icon: Banknote, t: "Bank Loans Up To 70%", d: "Easy documentation, smooth registration, financing made simple." },
   { icon: ShieldCheck, t: "Safe & Verified", d: "DTCP approved, A-Katha certified, clear legal documentation." },
 ];
@@ -26,7 +26,7 @@ export function Investment() {
               Investment Benefits
             </span>
             <h2 className="mt-4 font-serif text-3xl md:text-5xl leading-tight text-white">
-              Smart investors don't wait for opportunity —<br className="hidden md:block" />
+              Smart investors don't wait for opportunity -<br className="hidden md:block" />
               <span className="italic text-brand-orange">they create it</span>.
             </h2>
           </div>

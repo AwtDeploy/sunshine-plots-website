@@ -16,7 +16,7 @@ export const Route = createFileRoute("/gallery")({
   }),
   component: () => (
     <PageShell>
-      <PageHeader eyebrow="Gallery" title={<>A visual tour of our <span className="italic text-brand-green">developments</span>.</>} subtitle="Real layouts, real progress, real homes — captured at golden hour." />
+      <PageHeader eyebrow="Gallery" title={<>A visual tour of our <span className="italic text-brand-green">developments</span>.</>} subtitle="Real layouts, real progress, real homes - captured at golden hour." />
       <Gallery heading={false} />
       <CTA />
     </PageShell>

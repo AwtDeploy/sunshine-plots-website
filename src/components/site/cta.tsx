@@ -25,7 +25,7 @@ export function CTA() {
               <span className="italic text-brand-orange">future investment?</span>
             </h2>
             <p className="mt-6 text-white/80 text-lg max-w-lg">
-              Book a free site visit. Walk the layout, review the documents, and
+              Book a free site visit. Walk the layout, review the documents and
               meet our investment advisors in person.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
