@@ -45,6 +45,14 @@ import img28 from "@/assets/19.png";
 import img29 from "@/assets/20.png";
 import img30 from "@/assets/21.png";
 import img31 from "@/assets/22.png";
+
+import img32 from "@/assets/sai1.jpeg";
+import img33 from "@/assets/sai2.jpeg";
+import img34 from "@/assets/sai3.jpeg";
+import img35 from "@/assets/pbr1.jpeg";
+import img36 from "@/assets/pbr2.jpeg";
+import img37 from "@/assets/pbr3.jpeg";
+
 const projects = [
   {
     images: [img1 , img2 ,img3],
@@ -63,7 +71,7 @@ const projects = [
     status: "Completed",
   },
   {
-    images: [img7 , img8 , img9 ],
+    images: [img35 , img36 , img37 ],
     name: "Padmavathi Balaji Layout",
     location: "Sarjapur, Bangalore",
     badge: "Completed Project",
@@ -79,7 +87,7 @@ const projects = [
     status: "Completed",
   },
   {
-    images: [img13 , img14 , img15],
+    images: [img32 , img33 , img34],
     name: "Sri Sai Nagara",
     location: "Bommasandra, Bangalore",
     badge: "Completed Project",
