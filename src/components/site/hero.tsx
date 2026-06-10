@@ -53,7 +53,7 @@ export function Hero() {
             className="mt-6 max-w-xl text-base md:text-lg text-white/85 leading-relaxed"
           >
             Premium plotted developments designed for smart investors and growing
-            families — at just <span className="text-white font-medium">₹2,999/sqft</span>,
+            families - at just <span className="text-white font-medium">₹2999/sqft</span>,
             near Narsapur Industrial Area.
           </motion.p>
 
@@ -63,7 +63,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 1.45 }}
             className="mt-8 max-w-xl border-l-2 border-white/40 pl-5 font-serif italic text-white/90 text-base md:text-lg leading-relaxed"
           >
-            &quot;Land is not just an asset — it is the foundation of generational wealth.&quot;
+            &quot;Land is not just an asset - it is the foundation of generational wealth.&quot;
           </motion.blockquote>
 
           <motion.div
@@ -99,7 +99,7 @@ export function Hero() {
       <div className="absolute bottom-6 md:bottom-8 left-0 right-0 z-10 px-4 md:px-6">
         <div className="mx-auto max-w-6xl glass-card rounded-2xl grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-white/30 overflow-hidden">
           {[
-            { v: "₹2,999", l: "Per Sqft" },
+            { v: "₹2999", l: "Per Sqft" },
             { v: "70%", l: "Bank Loan" },
             { v: "100%", l: "DTCP Approved" },
             { v: "A-Katha", l: "Certified" },

@@ -27,7 +27,7 @@ const items = [
 
 export function Testimonials() {
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-16 md:py-20">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <Reveal>
           <div className="text-center max-w-2xl mx-auto mb-14">

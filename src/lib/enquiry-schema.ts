@@ -11,7 +11,7 @@ export const enquiryFormSchema = z.object({
     }),
   budget: z.string().optional(),
   message: z.string().optional(),
-  source: z.string().default("contact_page"),
+  source: z.string(),
   /** Honeypot — must stay empty */
   website: z.string().optional(),
 });

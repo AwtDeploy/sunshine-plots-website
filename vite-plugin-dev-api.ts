@@ -28,15 +28,16 @@ export function devApiPlugin(): Plugin {
         req.on("data", (chunk: Buffer) => chunks.push(chunk));
         req.on("end", async () => {
           try {
-            const { handleSubmitEnquiry, getSubmitEnquiryErrorStatus } =
-              await import("./src/api-handlers/submit-enquiry");
+            const mod = await import("./src/api-handlers/submit-enquiry");
+            const { handleSubmitEnquiry, getSubmitEnquiryErrorStatus } = mod;
             const body = JSON.parse(Buffer.concat(chunks).toString("utf8"));
             const result = await handleSubmitEnquiry(body);
             res.statusCode = 200;
             res.setHeader("Content-Type", "application/json");
             res.end(JSON.stringify(result));
           } catch (error) {
-            const status = getSubmitEnquiryErrorStatus(error);
+            const mod = await import("./src/api-handlers/submit-enquiry");
+            const status = mod.getSubmitEnquiryErrorStatus(error);
             console.error("submit-enquiry error:", error);
             res.statusCode = status;
             res.setHeader("Content-Type", "application/json");

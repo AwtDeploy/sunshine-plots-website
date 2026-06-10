@@ -17,7 +17,7 @@ const images = [
 
 export function Gallery({ heading = true }: { heading?: boolean }) {
   return (
-    <section id="gallery" className="py-24 md:py-32 bg-cream">
+    <section id="gallery" className="py-16 md:py-20 bg-cream">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         {heading && (
           <Reveal>

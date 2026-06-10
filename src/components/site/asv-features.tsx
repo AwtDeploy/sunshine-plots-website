@@ -43,16 +43,22 @@ export function AsvFeatures() {
       <section className="py-20 md:py-28 bg-white">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <Reveal>
-            <h2 className="text-center font-serif text-3xl md:text-5xl text-foreground">
-              Project <span className="text-brand-orange">Amenities</span>
-            </h2>
+            <div className="text-center">
+              <span className="text-xs tracking-[0.22em] uppercase text-brand-orange font-medium">
+                What you get
+              </span>
+              <h2 className="mt-3 font-serif text-3xl md:text-5xl text-foreground">
+                Project <span className="italic text-brand-green">Amenities</span>
+              </h2>
+              <div className="mt-4 mx-auto h-[3px] w-20 rounded-full bg-brand-orange" />
+            </div>
           </Reveal>
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {amenities.map((a, i) => (
               <Reveal key={a.t} delay={i * 0.05}>
                 <div className="group h-full rounded-2xl bg-[#F7F7F7] hover:bg-white border border-transparent hover:border-border hover:shadow-xl transition-all p-6 md:p-8 text-center">
-                  <span className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-orange/10 text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors">
-                    <a.icon className="h-8 w-8" />
+                  <span className="inline-flex h-20 w-20 items-center justify-center rounded-2xl bg-brand-orange/10 text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors">
+                    <a.icon className="h-10 w-10" />
                   </span>
                   <div className="mt-5 font-serif text-base md:text-lg text-foreground leading-snug">
                     {a.t}
@@ -68,19 +74,25 @@ export function AsvFeatures() {
       <section className="py-20 md:py-28 bg-[#F7F7F7]">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <Reveal>
-            <h2 className="text-center font-serif text-3xl md:text-5xl text-foreground">
-              Location <span className="text-brand-orange">Advantage</span>
-            </h2>
+            <div className="text-center">
+              <span className="text-xs tracking-[0.22em] uppercase text-brand-orange font-medium">
+                Strategically placed
+              </span>
+              <h2 className="mt-3 font-serif text-3xl md:text-5xl text-foreground">
+                Location <span className="italic text-brand-green">Advantage</span>
+              </h2>
+              <div className="mt-4 mx-auto h-[3px] w-20 rounded-full bg-brand-orange" />
+            </div>
           </Reveal>
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {location.map((l, i) => (
               <Reveal key={l.t} delay={i * 0.07}>
                 <div className="h-full rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all p-7 text-center">
-                  <span className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-green/10 text-brand-green">
-                    <l.icon className="h-8 w-8" />
+                  <span className="inline-flex h-20 w-20 items-center justify-center rounded-2xl bg-brand-green/10 text-brand-green">
+                    <l.icon className="h-10 w-10" />
                   </span>
                   <div className="mt-5 font-serif text-lg text-foreground leading-snug">
-                    {l.t} {l.v && <span className="text-brand-orange">— {l.v}</span>}
+                    {l.t} {l.v && <span className="text-brand-orange">- {l.v}</span>}
                   </div>
                 </div>
               </Reveal>
