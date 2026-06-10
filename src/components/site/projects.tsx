@@ -14,10 +14,40 @@ import p8 from "@/assets/cta-bg.jpg";
 import vaibhavii from "@/assets/project-vaibhavii.jpg";
 import padmavathi from "@/assets/project-padmavathi.jpg";
 import srr from "@/assets/project-srr.jpg";
-
+import img1 from "@/assets/img 1.jpg";
+import img2 from "@/assets/img 2.jpg";
+import img3 from "@/assets/img 3.jpg";
+import img4 from "@/assets/img 4.jpg";
+import img5 from "@/assets/img 5.jpg";
+import img6 from "@/assets/img 6.jpg";
+import img7 from "@/assets/img 7.jpg";
+import img8 from "@/assets/img 8.jpg";
+import img9 from "@/assets/img 9.jpg";
+import img10 from "@/assets/img 10.jpg";
+import img11 from "@/assets/img11.jpg";
+import img12 from "@/assets/img 12.jpg";
+import img13 from "@/assets/img 13.jpg";
+import img14 from "@/assets/img 14.jpg";
+import img15 from "@/assets/4.png";
+import img16 from "@/assets/6.png";
+import img17 from "@/assets/7.png";
+import img18 from "@/assets/8.png";
+import img19 from "@/assets/9.png";
+import img20 from "@/assets/10.png";
+import img21 from "@/assets/11.png";
+import img22 from "@/assets/13.png";
+import img23 from "@/assets/14.png";
+import img24 from "@/assets/15.png";
+import img25 from "@/assets/16.png";
+import img26 from "@/assets/17.png";
+import img27 from "@/assets/18.png";
+import img28 from "@/assets/19.png";
+import img29 from "@/assets/20.png";
+import img30 from "@/assets/21.png";
+import img31 from "@/assets/22.png";
 const projects = [
   {
-    images: [srr, p1, p2, p3],
+    images: [img1 , img2 ,img3],
     name: "SRR Temple Bells",
     location: "RR Nagar, Bangalore",
     badge: "Completed Project",
@@ -25,7 +55,7 @@ const projects = [
     status: "Completed",
   },
   {
-    images: [vaibhavii, p2, p3, p4],
+    images: [img4 , img5, img6 ],
     name: "Vaibhavii Residential Layout",
     location: "HSR Extension, Bangalore",
     badge: "Completed Project",
@@ -33,7 +63,7 @@ const projects = [
     status: "Completed",
   },
   {
-    images: [padmavathi, p3, p4, p5],
+    images: [img7 , img8 , img9 ],
     name: "Padmavathi Balaji Layout",
     location: "Sarjapur, Bangalore",
     badge: "Completed Project",
@@ -41,7 +71,7 @@ const projects = [
     status: "Completed",
   },
   {
-    images: [p4, p5, p6],
+    images: [img10 , img11, img12],
     name: "Pragathi Woods",
     location: "Bangalore Outskirts",
     badge: "Completed Project",
@@ -49,7 +79,7 @@ const projects = [
     status: "Completed",
   },
   {
-    images: [p5, p6, p7],
+    images: [img13 , img14 , img15],
     name: "Sri Sai Nagara",
     location: "Bommasandra, Bangalore",
     badge: "Completed Project",
@@ -57,7 +87,7 @@ const projects = [
     status: "Completed",
   },
   {
-    images: [p6, p7, p8],
+    images: [img16, img17, img18],
     name: "Sunshine Meadows",
     location: "Hosakote, Bangalore",
     badge: "Completed Project",
@@ -65,7 +95,7 @@ const projects = [
     status: "Completed",
   },
   {
-    images: [p7, p8, p1],
+    images: [img19 ,img20, img21],
     name: "Akshaya Quiet Lands",
     location: "Bommanahalli, Bangalore",
     badge: "Completed Project",
@@ -73,7 +103,7 @@ const projects = [
     status: "Completed",
   },
   {
-    images: [p8, asv, p1],
+    images: [img22 , img23 , img24],
     name: "Sunshine Layout",
     location: "Bangalore",
     badge: "Completed Project",
