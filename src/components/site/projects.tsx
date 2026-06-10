@@ -150,9 +150,17 @@ export function Projects() {
           </div>
         </Reveal>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((p, i) => (
-            <Reveal key={p.name} delay={i * 0.08}>
+        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8">
+          {projects.map((p, i) => {
+            const isSecondLast = i === projects.length - 2;
+            const isLast = i === projects.length - 1;
+            const lgClasses = isSecondLast
+              ? "lg:col-span-2 lg:col-start-2"
+              : isLast
+              ? "lg:col-span-2 lg:col-start-4"
+              : "lg:col-span-2";
+            return (
+            <Reveal key={p.name} delay={i * 0.08} className={lgClasses}>
               <article className="group rounded-2xl overflow-hidden bg-white border border-border/60 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-1">
                 <div className="relative">
                   <ProjectCarousel images={p.images} alt={p.name} />
@@ -187,7 +195,8 @@ export function Projects() {
                 </div>
               </article>
             </Reveal>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
